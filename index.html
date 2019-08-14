@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube API</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <h1>Youtube API:</h1>
+        <div id="container">
+
+            <div class="row justify-content-md-center">
+                <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                    <label for="search">Search Terms</label>
+                    <input id="search-input" type="text" class="form-control" placeholder="What do you want to search for?">
+                    </div>
+                    <button id="enter-search" type="submit" class="btn btn-primary" >Submit</button>
+                </form>
+                </div>
+            </div>
+
+            <div id="videos-appear-here"></div>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="javascript1.js"></script>
+    </body>
+</html>
