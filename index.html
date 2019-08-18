@@ -1,31 +1,72 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Youtube API</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
+<html lang="en">
+<head>		
+    <title>Workout Search Engine</title>
+    <meta charset="UTF-8" />					
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Awesome videos!" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
 
-    <body>
-        <h1>Youtube API:</h1>
-        <div id="container">
-
-            <div class="row justify-content-md-center">
-                <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                    <label for="search">Search Terms</label>
-                    <input id="search-input" type="text" class="form-control" placeholder="What do you want to search for?">
-                    </div>
-                    <button id="enter-search" type="submit" class="btn btn-primary" >Submit</button>
-                </form>
-                </div>
-            </div>
-
-            <div id="videos-appear-here"></div>
-
+<body>
+    <header>
+        <h1 class="w100"><a href="index.html">Fitness Workouts:</a></h1>
+    </header>
+    <div class="row mxauto" style="width: 100px;">
+        <div class="btn-group" role="group" aria-label="Button-group">
+            <button type="button" id="abs" class="btn btn-secondary">Abs</button>
+            <button type="button" id="arms" class="btn btn-secondary">Arms</button>
+            <button type="button" id="back" class="btn btn-secondary">Back</button>
+            <button type="button" id="claves" class="btn btn-secondary">Calves</button>
+            <button type="button" id="chest" class="btn btn-secondary">Chest</button>
+            <button type="button" id="legs" class="btn btn-secondary">Legs</button>
+            <button type="button" id="shoulders" class="btn btn-secondary">Shoulders</button>
         </div>
+    </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="javascript1.js"></script>
-    </body>
+    <table class="tborder" cellpadding="$stylevar[cellpadding]" cellspacing="$stylevar[cellspacing]" border="0" width="100%" align="center">
+            <tr>
+             <td class="thead" width="100%">
+              <div style="text-align: center;">
+               <strong>YouTube Search</strong>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td class="alt1" width="100%">
+             <div class="smallfont" style="text-align: center;">
+              <form id="vb_yt_search-form" action="http://www.youtube.com/results" method="get" target="_blank">
+               <input id="vb_yt_search-term" name="search_query" type="text" maxlength="128" />
+               <select name="search_type">
+                <option value="" >Videos</option>
+                <option value="search_users">Channels</option>
+               </select>
+               <input type="submit" value="Search" />
+              </form>
+             </div>
+             </td>
+            </tr>
+           </table>
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form action="#">
+                <!-- <p><input type="text" id="search" placeholder="Search for a workout.." autocomplete="off" class="form-control" /></p> -->
+                <!-- <p><input id="submit" type="submit" value="Search" class="form-control btn btn-primary w100"></p> -->
+            </form>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script src="javascript1.js"></script>
+    <script src="javascript2.js"></script>
+    <script src="javascript3.js"></script>
+    <script src="javascript4.js"></script>
+    <script src="javascript5.js"></script>
+    <script src="javascript6.js"></script>
+    <script src="javascript7.js"></script>
+</body>
 </html>
