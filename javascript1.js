@@ -1,4 +1,4 @@
-    alert("Resetting..Abs");
+    //alert("Resetting..Abs");
     
     function displayExerciseInfo(){
 

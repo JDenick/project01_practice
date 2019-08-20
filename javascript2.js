@@ -1,4 +1,4 @@
-alert("Resetting..Arms");
+//alert("Resetting..Arms");
     
 function displayExerciseInfo(){
 

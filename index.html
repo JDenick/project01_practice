@@ -11,10 +11,13 @@
 
 <body>
     <header>
-        <h1 class="w100"><a href="index.html">Fitness Workouts:</a></h1>
+        <h1 class="w100 text-center"><a href="index.html">Fitness Workouts:</a></h1>
     </header>
-    <div class="row mxauto" style="width: 100px;">
-        <div class="btn-group" role="group" aria-label="Button-group">
+
+    <br>
+
+    <div class="row" style="width: 100%;">
+        <div class="btn-group text-center"  style="width: 100%;" role="group" aria-label="Button-group">
             <button type="button" id="abs" class="btn btn-secondary">Abs</button>
             <button type="button" id="arms" class="btn btn-secondary">Arms</button>
             <button type="button" id="back" class="btn btn-secondary">Back</button>
@@ -24,6 +27,8 @@
             <button type="button" id="shoulders" class="btn btn-secondary">Shoulders</button>
         </div>
     </div>
+
+    <br>
 
     <table class="tborder" cellpadding="$stylevar[cellpadding]" cellspacing="$stylevar[cellspacing]" border="0" width="100%" align="center">
             <tr>
@@ -37,12 +42,12 @@
              <td class="alt1" width="100%">
              <div class="smallfont" style="text-align: center;">
               <form id="vb_yt_search-form" action="http://www.youtube.com/results" method="get" target="_blank">
-               <input id="vb_yt_search-term" name="search_query" type="text" maxlength="128" />
+               <input id="vb_yt_search-term" name="search_query" type="text" maxlength="128" placeholder="Search for a workout.." />
                <select name="search_type">
                 <option value="" >Videos</option>
                 <option value="search_users">Channels</option>
                </select>
-               <input type="submit" value="Search" />
+               <input type="submit" class="btn btn-secondary" value="Search" />
               </form>
              </div>
              </td>

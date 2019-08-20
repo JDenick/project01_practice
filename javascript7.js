@@ -1,4 +1,4 @@
-alert("Resetting..Shoulders");
+//alert("Resetting..Shoulders");
     
 function displayExerciseInfo(){
 

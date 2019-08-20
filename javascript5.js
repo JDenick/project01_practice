@@ -1,4 +1,4 @@
-alert("Resetting..Chest");
+//alert("Resetting..Chest");
     
 function displayExerciseInfo(){
 

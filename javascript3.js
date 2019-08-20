@@ -1,4 +1,4 @@
-alert("Resetting..Back");
+//alert("Resetting..Back");
     
 function displayExerciseInfo(){
 

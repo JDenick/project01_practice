@@ -1,4 +1,4 @@
-alert("Resetting..Legs");
+//alert("Resetting..Legs");
     
 function displayExerciseInfo(){
 
