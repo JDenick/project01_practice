@@ -48,7 +48,7 @@
 
     //This is a double AJAX call. Each time you submit a request, it comes back with only 20 results.
     //The exercise JSON results returns a lot, so the second query generates all the results back in one JSON file.
-    $("#abs").on("click", function(){
+    $("#submit").on("click", function(){
 
     $.ajax({
         url: basicQueryURL + "/" + endpointExercise,
@@ -92,10 +92,13 @@
                   var workoutDiv = $("<div>");
                   var p = $("<p>").text("Name: " + results[i].name);
                   var ptwo = $("<p>").text("Equipment: " + tempEquipment);
-                  var pthree = $("<p>").text("Description: " + results[i].description);
+                  //var pthree = $("<p>").text("Description: " + results[i].description);
+                  let demoJSON = {
+                    field: (results[i].description)
+                  }
                   workoutDiv.append(p);
                   workoutDiv.append(ptwo);
-                  workoutDiv.append(pthree);
+                  workoutDiv.append(demoJSON.field.replace(/(<([^>]+)>)/ig, ""));
                   $("#results").prepend(workoutDiv);
                   }
                 }

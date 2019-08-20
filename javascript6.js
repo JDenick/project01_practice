@@ -93,9 +93,12 @@ $.ajax({
               var p = $("<p>").text("Name: " + results[i].name);
               var ptwo = $("<p>").text("Equipment: " + tempEquipment);
               var pthree = $("<p>").text("Description: " + results[i].description);
+              let demoJSON = {
+                field: (results[i].description)
+              }
               workoutDiv.append(p);
               workoutDiv.append(ptwo);
-              workoutDiv.append(pthree);
+              workoutDiv.append(demoJSON.field.replace(/(<([^>]+)>)/ig, ""));
               $("#results").prepend(workoutDiv);
               }
             }

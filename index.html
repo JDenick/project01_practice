@@ -11,28 +11,35 @@
 
 <body>
     <header>
-        <h1 class="w100 text-center"><a href="index.html">Fitness Workouts:</a></h1>
+        <h1 class="w100 text-center"><strong><a href="index.html">Fitness Workouts:</a></strong></h1>
     </header>
 
-    <br>
 
-    <div class="row" style="width: 100%;">
-        <div class="btn-group text-center"  style="width: 100%;" role="group" aria-label="Button-group">
+    <div class="row">
+        <div class="btn-group text-center col-md-12 col-md-offset-3"  style="width: 100%;" role="group" aria-label="Button-group">
             <button type="button" id="abs" class="btn btn-secondary">Abs</button>
             <button type="button" id="arms" class="btn btn-secondary">Arms</button>
             <button type="button" id="back" class="btn btn-secondary">Back</button>
-            <button type="button" id="claves" class="btn btn-secondary">Calves</button>
+            <button type="button" id="calves" class="btn btn-secondary">Calves</button>
             <button type="button" id="chest" class="btn btn-secondary">Chest</button>
             <button type="button" id="legs" class="btn btn-secondary">Legs</button>
             <button type="button" id="shoulders" class="btn btn-secondary">Shoulders</button>
         </div>
     </div>
 
+    <div class="row">
+            <div class="col-md-12 col-md-offset-3">
+                <form action="#">
+                    <p><input id="submit" type="submit" value="Find My Exercises!" class="form-control btn btn-primary w100"></p>
+                </form>
+            </div>
+    </div>
+
     <br>
 
     <table class="tborder" cellpadding="$stylevar[cellpadding]" cellspacing="$stylevar[cellspacing]" border="0" width="100%" align="center">
             <tr>
-             <td class="thead" width="100%">
+             <td class="thead" style="width: 100%">
               <div style="text-align: center;">
                <strong>YouTube Search</strong>
               </div>
@@ -53,13 +60,10 @@
              </td>
             </tr>
            </table>
+           </form>
 
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <form action="#">
-                <!-- <p><input type="text" id="search" placeholder="Search for a workout.." autocomplete="off" class="form-control" /></p> -->
-                <!-- <p><input id="submit" type="submit" value="Search" class="form-control btn btn-primary w100"></p> -->
-            </form>
             <div id="results"></div>
         </div>
     </div>
