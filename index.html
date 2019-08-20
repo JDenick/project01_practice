@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1 class="w100 text-center"><strong><a href="index.html">Fitness Workouts:</a></strong></h1>
+        <h1 class="w100 text-center"><strong><a href="index.html">Fitness Workouts</a></strong></h1>
     </header>
 
 
@@ -37,47 +37,27 @@
     </div>
 
     <table class="tborder" cellpadding="$stylevar[cellpadding]" cellspacing="$stylevar[cellspacing]" border="0" width="100%" align="center">
-            <!-- <tr>
-             <td class="thead" style="width: 50%">
-              <div style="text-align: center;">
-               <strong>YouTube Search</strong>
-              </div>
-             </td>
-            </tr>
-            <tr> -->
-             <td class="alt1" width="100%">
-             <div class="smallfont" style="text-align: center;">
-              <form id="vb_yt_search-form" action="http://www.youtube.com/results" method="get" target="_blank">
-               <input id="vb_yt_search-term" class="form-control text-center" name="search_query" type="text" maxlength="128" placeholder="Search for a workout on Youtube.." />
-               <select name="search_type">
-                <option value="" >Videos</option>
-                <option value="search_users">Channels</option>
-               </select>
-               <input type="submit" class="btn btn-secondary" value="Search" />
-              </form>
-             </div>
-             </td>
-            </tr>
-           </table>
-           </form>
+        <td class="alt1" width="100%">
+            <div class="smallfont" style="text-align: center;">
+                <form id="vb_yt_search-form" action="http://www.youtube.com/results" method="get" target="_blank">
+                    <input id="vb_yt_search-term" class="form-control text-center" name="search_query" type="text" maxlength="128" placeholder="Search for a workout on Youtube.." />
+                        <select name="search_type">
+                            <option value="" >Videos</option>
+                            <option value="search_users">Channels</option>
+                        </select>
+                    <input type="submit" class="btn btn-secondary" value="Search" />
+                </form>
+            </div>
+        </td>
+    <!-- </tr> -->
+    </table>
+    <!-- </form> -->
 
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="card-body" id="results"></div>
         </div>
     </div>
-
-
-
-
-
-
-
-            <!-- <div class="card">
-            <div id="results"></div>
-            </div>
-        </div>
-    </div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://apis.google.com/js/client.js"></script>
