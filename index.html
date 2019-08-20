@@ -49,7 +49,7 @@
              <td class="alt1" width="100%">
              <div class="smallfont" style="text-align: center;">
               <form id="vb_yt_search-form" action="http://www.youtube.com/results" method="get" target="_blank">
-               <input id="vb_yt_search-term" name="search_query" type="text" maxlength="128" placeholder="Search for a workout.." />
+               <input id="vb_yt_search-term" class="form-control text-center" name="search_query" type="text" maxlength="128" placeholder="Search for a workout.." />
                <select name="search_type">
                 <option value="" >Videos</option>
                 <option value="search_users">Channels</option>
@@ -64,9 +64,21 @@
 
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <div id="results"></div>
+            <div class="card-body" id="results"></div>
         </div>
     </div>
+
+
+
+
+
+
+
+            <!-- <div class="card">
+            <div id="results"></div>
+            </div>
+        </div>
+    </div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://apis.google.com/js/client.js"></script>
